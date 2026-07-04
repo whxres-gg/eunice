@@ -38,7 +38,7 @@ export default function SmoothAnimatedResume() {
         delayChildren: 0.02 
       }
     }
-  };
+  } as const;
 
   // Content Block Entry Animations
   const contentBlockVariants = {
@@ -49,7 +49,7 @@ export default function SmoothAnimatedResume() {
       filter: "blur(0px)",
       transition: { type: "spring", stiffness: 70, damping: 16 } 
     }
-  };
+  } as const;
 
   // Card Interactive Dynamic Shifting
   const interactiveCardVariants = {
@@ -66,7 +66,7 @@ export default function SmoothAnimatedResume() {
       boxShadow: "0 20px 40px -15px rgba(0, 0, 0, 0.9), 0 0 20px 1px rgba(255,255,255,0.01)",
       transition: { type: "spring", stiffness: 200, damping: 18 }
     }
-  };
+  } as const;
 
   const skillBadgeVariants = {
     rest: { scale: 1, backgroundColor: "rgba(24, 24, 27, 0.8)", borderColor: "rgba(39, 39, 42, 0.6)", color: "#a1a1aa" },
@@ -77,7 +77,7 @@ export default function SmoothAnimatedResume() {
       color: "#050507",
       transition: { type: "spring", stiffness: 400, damping: 15 }
     }
-  };
+  } as const;
 
   const coreCompetencies = {
     clinicalResearch: ["MoCA Administration", "ACE-III Administration", "Cognitive Screening", "Behavioural Observation", "Neuropsychological Assessment", "Research Documentation", "Literature Review"],
